@@ -47,14 +47,24 @@ a {
 
 .myButton {
   background-color: none;
-  border: 2px solid #4CAF50;
+  border: 2px solid #CBCB43;
   padding: 14px 40px;
   border-radius: 4px;
   transition: 0.6s;
 }
 
 .myButton:hover {
-  background-color: #4CAF50;
+  background-color: #CBCB43;
+  color: white;
+  font-size: bold;
+}
+
+.links {
+  transition: 0.6s;
+}
+
+.links:hover {
+  color: #CBCB43;
 }
 
 main {
@@ -103,5 +113,5 @@ main {
 }
 
 #imagem_principal img {
-  width: 300px;
+  width: 288px;
 }
