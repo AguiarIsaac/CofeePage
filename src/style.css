@@ -1,43 +1,11 @@
+/*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/*Resets*/
 * {
+  margin: 0;
   padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
-}
-body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgb(100, 56, 21) 100%);
-  color: white;
-  font-family: 'Manrope', sans-serif;
-}
-
-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-#menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-}
-ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu_list {
-  margin-left: 24px;
+  box-sizing: border-box;
 }
 
 a {
@@ -45,73 +13,74 @@ a {
   color: white;
 }
 
-.myButton {
-  background-color: none;
-  border: 2px solid #CBCB43;
-  padding: 14px 40px;
-  border-radius: 4px;
-  transition: 0.6s;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.myButton:hover {
-  background-color: #CBCB43;
+/*Bases*/
+
+body {
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased; /*Deixa o texto mais bonito*/
+  background-color: black;
   color: white;
-  font-size: bold;
 }
 
-.links {
-  transition: 0.6s;
-}
+/*Layouts*/
 
-.links:hover {
-  color: #CBCB43;
-}
-
-main {
-  max-width: 800px;
+header {
+  border-bottom: 1px solid grey;
+  width: 100%;
   margin: 0 auto;
 }
 
-.title {
-  text-align: center;
-  margin-top: 120px;
-}
-
-#title1 {
-  font-size: 82px;
-}
-
-#title2 {
-  font-size: 80px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.titulo-code{
-    color: #CBCB43;
-}
-.titulo-code:after{
- content: '|';
- margin-left: 5px;
- opacity: 1;
- animation: pisca .7s infinite;
-}
-
-@keyframes pisca{
-    0%, 100%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-}
-
-#imagem_principal {
+nav {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 3.65rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
 }
 
-#imagem_principal img {
-  width: 288px;
+#line {
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center
+}
+#title {
+  margin-top: 5.5rem;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#button {
+  margin-top: 5.5rem;
+}
+#button a {
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid grey;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+footer {
+  position: fixed;
+  bottom: -5px;
 }
