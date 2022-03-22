@@ -33,9 +33,23 @@ header {
   border-bottom: 1px solid grey;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.65rem;
+  box-sizing: border-box;
 }
 
-nav {
+#btn-mobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -43,6 +57,17 @@ nav {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 1.5rem;
+}*/ 
+
+#list_menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#list_menu a {
+  display: block;
+  padding: 0.5rem;
 }
 
 #line {
@@ -83,4 +108,20 @@ section {
 footer {
   position: fixed;
   bottom: -5px;
+}
+
+/*Menu responsivo*/
+
+@media (max-width: 600px) {
+  #list_menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #white;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+  }
 }
