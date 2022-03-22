@@ -11,9 +11,15 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="home" id="logo">Cofee<span>Page</span>.</a>
-      <div>Menu</div>    
+    <a href="home" id="logo">Cofee<span>Page</span>.</a>
+    <nav id="nav" class="active">
+      <button id="btn_menu">Menu</button>
+      <ul id="list_menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Gifts Cards</a></li>
+        <li><a href="/">Reconpensas</a></li>
+        <li><a href="/">Lojas</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -24,16 +30,16 @@
       </div>
 
       <div id="button">
-        <a href="cofee">Pegar meu café</a>        
+        <a href="cofee" class="button">Pegar meu café</a>        
       </div>
     </section>
+
+    <footer>
+      <div id="image">
+        <img src="public/rocket-coffee.png" alt="Copo de café">
+      </div>
+    </footer>
   </main>
-
-  <footer>
-    <div id="image">
-      <img src="public/rocket-coffee.png" alt="Copo de café">
-    </div>
-  </footer>
-
+  <script src="src/index.js"></script>
 </body>
 </html>
