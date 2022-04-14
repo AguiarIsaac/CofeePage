@@ -27,6 +27,7 @@ header {
 	height: 8vh;
 	/* topo | direita | inferior | esquerda */
 	margin: 0 1.5rem 0 1.5rem;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
     align-items: center;
@@ -68,4 +69,16 @@ header {
 
 #menu #links li:hover {
 	border-left: 3px solid #8257E6;
+}
+
+#main-content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#gcode {
+	-webkit-text-stroke-width: 1px;
+	color: black;
+  	-webkit-text-stroke-color: #8257E6;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
