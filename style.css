@@ -39,6 +39,7 @@ header {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
+
 }
 
 #menu {
@@ -79,7 +80,13 @@ header {
 	border-left: 3px solid #8257E6;
 }
 
+main {
+	width: 100%;
+}
+
 #main-content{
+	display: flex;
+	flex-direction: column;
 	width: 90%;
 	max-width: 23rem;
 	margin: 0 auto;
@@ -154,21 +161,40 @@ footer {
 		background-attachment: fixed;
 		background-position: top, bottom;
 		background-size: 100vw 100vh;
+		font-family: 'Manrope', sans-serif;
 	}
 
 	header {
 		border-bottom: none;
-		width: 100%;
+	}
+
+	nav {
+		width: 30rem;
 	}
 
 	#header-content {
 		margin: 0 auto;
-    	width: 80%;
+		width: 60%;
     	margin-top: 3.125rem;
 	}
 
 	#btn_header {
 		display: block;
+	}
+
+	#btn_header a {
+		border: 1px solid grey;
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid #8257E6;
+		border-radius: 4px;
+		width: 10rem;
+		/* margin: 5.5rem auto 0; */
+		padding: 1rem 0 1rem 0;
+		height: 2rem;
 	}
 
 	#icon_btn {
@@ -181,17 +207,52 @@ footer {
 
 	#menu #links {
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	#menu #links li {
 		all:initial;
+		margin-right: 2rem;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	#menu #links li a {
+		padding: 0
 	}
 
 	#menu #links li:last-child {
 		all:initial;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	#menu #links li:hover {
+		border: none;
+	}
+
+
+	#main-content{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 60%;
+		margin: 0 auto;
+		max-width: none;
 	}
 
 	#main-btn {
 		display: none;
 	}
+
+	h1.main-top {
+		display: none;
+	}
+
+	h2.main-top, h2#gcode {
+		font-weight: 700;
+		font-size: 80px;
+	}
+
 }
